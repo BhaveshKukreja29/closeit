@@ -27,7 +27,6 @@ quotes = [
   "Enough"
 ]
 
-// did -1 cuz idx at 26 would give undefined
 function randomQuote() {
   idx = Math.round(Math.random() * quotes.length) % quotes.length;
   console.log(idx);
