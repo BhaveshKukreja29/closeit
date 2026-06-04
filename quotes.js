@@ -1,4 +1,4 @@
-quotes = [
+const quotes = [
   "Close the damn tab!",
   "Nobody forced you to end up here",
   "This is getting embarrassing",
@@ -28,7 +28,6 @@ quotes = [
 ]
 
 function randomQuote() {
-  idx = Math.round(Math.random() * quotes.length) % quotes.length;
-  console.log(idx);
+  const idx = Math.floor(Math.random() * quotes.length);
   return quotes[idx];
 }
